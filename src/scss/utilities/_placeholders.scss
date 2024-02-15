@@ -1,6 +1,6 @@
-@use './mixins' as mx;
+@use 'mixins' as mx;
 
-&main-title{
+%main-title{
     font-family: 'Montserrat';
     font-size: 24px;
     font-weight: 700;
@@ -8,38 +8,38 @@
     letter-spacing: 0.02em;
 }
 
-&section-title{
+%section-title{
     font-weight: 600;
     font-size: 20px;
     line-height: 1.4;
     letter-spacing: 0.03em;
 }
-&main-text{
+%main-text{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
 }
-&accent-text{
+%accent-text{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
 }
-&details{
+%details{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.43;
     letter-spacing: 0.04em;
 }
-&details-accent{
+%details-accent{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.43;
     letter-spacing: 0.04em;
 }
 
-&section-frame{
+%section-frame{
     padding: 16px;
     border-radius: 12px;
 

@@ -1,0 +1,21 @@
+@if index($btn-types, primary ){
+    .btn--secondary{
+        background-color: transparent;
+
+        &:active{
+            background-color: transparent;
+        }
+
+        @media (hover: hover) {
+           &:hover,
+           &:focus{
+            background-color: transparent;
+           
+           } 
+        }
+
+        &[disabled]{
+            background-color: #b5b5be;
+        }
+    }
+}

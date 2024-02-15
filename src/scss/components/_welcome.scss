@@ -1,0 +1,16 @@
+@use 'btn/btn' as btn with(
+    $btn-layer-spacing: 4px
+);
+
+.welcome {
+    grid-area: welcome;
+}
+.welcome-wrapper {
+}
+.welcome-title {
+}
+.welcome-description {
+}
+.welcome-btn {
+  
+}
