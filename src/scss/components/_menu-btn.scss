@@ -1,0 +1,38 @@
+@use '../utilities/placeholders';
+@use '../utilities/variables' as var;
+@use '../utilities/functions' as fn;
+@use '../utilities/mixins' as mx;
+
+.menu-btn {
+    @extend %details;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    color: fn.get-color('light-primary');
+
+    @include mx.mq('lg'){
+        display: none;
+    }
+
+    .sidebar &{
+        @include mx.ease('slow', opacity, transform);
+        transition-delay: 600ms;
+        position: absolute;
+        right: -36px;
+        top: 16px;
+
+        opacity: 0;
+        transform: rotate(180deg);
+    }
+    .sidebar.is-open &{
+        opacity: 1;
+        transform: rotate(0deg);
+
+    }
+}
+
+.menu-btn-icon {
+    fill: fn.get-color('current');
+}
