@@ -93,34 +93,37 @@
 
     </aside>
     <header class="header">
-      <button class="menu-btn btn js-menu-open" type="button" aria-expanded="false" aria-controls="sidebar-menu" data-menu-open>
+      <button class="menu-btn js-menu-open" type="button" aria-expanded="false" aria-controls="sidebar-menu" data-menu-open>
         <svg class="menu-btn-icon" width="24" height="24">
           <use href="/cat-crm-scss/assets/icons.svg#icon-burger-menu"></use>
         </svg>
         Overview</button>
-        <label class="search-field">
-          <svg class="search-icon" width="20" height="20">
-            <use href="/cat-crm-scss/assets/icons.svg#icon-search"></use>
-          </svg>
-          <input class="search-input" type="search" name="user search" placeholder="Search sonething..."/>
-        </label>
-        <a class="bell-link" href="#message">
-          <svg class="bell-icon" width="20" height="20">
-            <use href="/cat-crm-scss/assets/icons.svg#icon-bell"></use>
-          </svg>
-        </a>
+        
+          <label class="search-field">
+            <svg class="search-icon" width="20" height="20">
+              <use href="/cat-crm-scss/assets/icons.svg#icon-search"></use>
+            </svg>
+            <input class="search-input" type="search" name="user search" placeholder="Search sonething..."/>
+          </label>
+          <button class="notification-btn" type="button" data-notify="true" aria-label="Bell button">
+            <svg class="notification-btn-icon" width="20" height="20">
+              <use href="/cat-crm-scss/assets/icons.svg#icon-bell"></use>
+            </svg>
+          </button>
+       
     </header>
     <main class="main">
       <section class="welcome">
         <div class="welcome-wrapper">
           <h1 class="welcome-title">Hi Yaroslav,</h1>
-          <p class="welcome-description">Welcome into Cat CRM Dashboard</p>
-          <button class="welcome-btn btn btn--primary" type="button">
-            <svg class="btn-icon" width="16" height="16">
-              <use href="/cat-crm-scss/assets/icons.svg#icon-plus"></use>
-            </svg>
-            <span class="btn-inner">Primary normal</span></button>
+          <p class="welcome-description">Welcome into Cat CRM Dashboard</p> 
         </div>
+        <button class="welcome-btn btn btn--primary" type="button">
+          <svg class="btn-icon" width="16" height="16">
+            <use href="/cat-crm-scss/assets/icons.svg#icon-plus"></use>
+          </svg>
+          <span class="btn-inner">Primary normal</span>
+        </button>
       </section>
       <section class="co-workers">
         <div class="co-workers-wrapper">
@@ -459,38 +462,43 @@
 
           </div>
 
-          <ul class="co-workers-board board">
-            <li class="board-item">
-              <div class="board-left">
-                <h3 class="board-caption">Send benefit review by Sunday</h3>
-                <p class="board-details">Due date:<time>December 23, 2023 </time></p>
-                <div class="thumb">
+          
+        </div>
+        <ul class="co-workers-board board">
+          <li class="board-item">
+            <div class="board-left">
+              <h3 class="board-caption">Send benefit review by Sunday</h3>
+              <p class="board-details">Due date:<time>December 23, 2023 </time></p>
+              <div class="person">
+                <div class="person-thumb">
                   <img src="data:image/jpeg;base64,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" alt=""/>
                 </div>
-                <p class="co-workers-caption">George Fields</p>
-              </div>
-              <div class="board-badge">
-                <p class="badge-info">Reminder</p>
-                <div class="badge badge-completed">Completed</div>
-              </div>
-            </li>
-            <li class="board-item">
-              <div class="board-left">
-                <h3 class="board-caption">Send benefit review by Sunday</h3>
-                <p class="board-details">Due date:<time>December 23, 2023 </time></p>
-                <div class="thumb">
+                <p class="person-caption">George Fields</p>
+            </div>
+            </div>
+            <div class="board-badge">
+              <p class="badge-info">Reminder</p>
+              <div class="badge-warning">Completed</div>
+            </div>
+          </li>
+          <li class="board-item">
+            <div class="board-left">
+              <h3 class="board-caption">Send benefit review by Sunday</h3>
+              <p class="board-details">Due date:<time>December 23, 2023 </time></p>
+              <div class="person">
+                <div class="person-thumb">
                   <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEASABIAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAYABgDAREAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+e/8AZ7+E03xv+NXwx+E8d9/ZSePPGWjaBe6v5JmOj6Tc3StresfZ15m/snSIr7UfJGPN+zFMqCSPAx2Kjg8JiMVO3LQpTqP5K6v6u19b2+R7eCw0sZi8PhY3cq1WFNW3tJ+9bzS1X+W36kf8FJf2L/gf+zj4R8Dat8DbHxBexWNxcW/jbxFcReMLmxuLfUfENxoemLqt/rAuNAtdcsNUhuNJeHRriyi1WPS9V1O201bO1eZPhci4kzHEZpHC46pRq4bFU4uhONKNGdOpUhKtTgoWU5x9mnCUr1IqcY3knJc36FxDwjgsFkrx+ChVhiMNUcMTBzlWg6cJRo1KjqXcYNVZRlGLUJSjNaSUXb8nLa24XC55Hb36Z49/Y9O2D+hf1/St+J+ZPyu3+m22m/y/U+y/+CZmj6Xe/tdeBrjWtQtNK0vRPDPxN1y91C7uo7RLQW/w38U2Wm3CSSuv72PXr/SGQp86ldyNlcV87xbU5MgzDXlc6caSb0XNOcdLrvFSS1u21pqj6XhSDlnuBajzezqOpyqzdoxfS3dp+W97anEf8FHP+CiXiLxv8Q9F/Zf8ewaBqkPwqurDQfFXxxs/FN9qtz8R9J0DS0uvDdjeeD7fTLTQvDfiXTNbD2Ot6nBql3bTST6sdD0nw9Z6pc2VePkHDE3gcDm/tcRPE+yp+yw0oqKoSU4Qk/bTnKpVpRpKcqMGlJc0VOdRwTPqOJONqlV4zh/6tg6eF+s1Z1MZT1qYiLi5RpypwhGFOXtlD2slOSvGXLCHPp8neEfiB4G8YXclh4Y8TaXrV3DA15LbWkx88WqyRwvcCJ0R2hWWWON5FUojyxoxBZc/eShOKTlGUV0uu+q0dn99mfmXPGTaTTtdO1tlpe/6rvda2PL9V8R3Np8RYNPspJXSy8Pa5e3dotxJDHdHSNCv9ZWKURSJJNaJfDTBeW7Ewzq0kBVmWUJ6WFpx9knOMXebkuZJpWsk/J3Ts1Z/gS5tVrRb0hK9na9ouSWj2va62vddWfnfrut2N1fXtxe3Nxqd9LLI9xeTv50txO7bpJ5ZHdnkllYszsQcvnkA4rqtGPuqySWi0S+S0/RHC2222223q3q2+7fU9F/ZY1xrH40aPBvMcOuWGu6Yw42n/QptVjjPTaGudNj2hR/rWUYwSK4sQuanLyaa+/8AydzSl8a9Gvwv+gD/2Q==" alt=""/>
                 </div>
-                <p class="co-workers-caption">Amanda Pitt</p>
-              </div>
-              <div class="board-badge">
-                <p class="badge-info">Call</p>
-                <div class="badge badge-ended">Ended</div>
-              </div>
-            </li>
-          </ul>
-          <button class="co-workers-btn btn btn--secondary"><span class="btn-inner">Show more</span></button>
-        </div>
+                <p class="person-caption">Amanda Pitt</p>
+            </div>
+            </div>
+            <div class="board-badge">
+              <p class="badge-info">Call</p>
+              <div class="badge-danger">Ended</div>
+            </div>
+          </li>
+        </ul>
+        <button class="co-workers-btn btn btn--secondary"><span class="btn-inner">Show more</span></button>
       </section>
       <section class="tasks">
         <h2 class="tasks-title"><span>Tasks (5)</span>|  Today</h2>
