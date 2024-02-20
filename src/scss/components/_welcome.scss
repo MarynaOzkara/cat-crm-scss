@@ -1,15 +1,38 @@
+@use '../utilities/placeholders';
+@use '../utilities/variables' as var;
+@use '../utilities/functions' as fn;
+@use '../utilities/mixins' as mx;
+
 @use 'btn/btn' as btn with(
     $btn-layer-spacing: 4px
 );
 
 .welcome {
     grid-area: welcome;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    row-gap: 16px;
 }
 .welcome-wrapper {
+    
 }
 .welcome-title {
+    @extend %main-title;
+
+    display: block;
+    margin-bottom: 8px;
+    color: fn.get-color('light-primary');
+
+    @include mx.mq('lg'){
+        margin-bottom: 16px;
+    }
 }
 .welcome-description {
+
+    
 }
 .welcome-btn {
   

@@ -1,0 +1,61 @@
+@use '../../utilities/placeholders';
+@use '../../utilities/variables' as var;
+@use '../../utilities/functions' as fn;
+@use '../../utilities/mixins' as mx;
+
+.co-workers {
+    grid-area: co-workers;
+
+    @include mx.mq('lg'){
+        padding: 20px;
+        background-color: fn.get-color('darck-tertiary');
+        border-radius: 12px;
+    }
+}
+.co-workers-btn{
+    display: block;
+    margin: 0 auto;
+}
+.co-workers-wrapper {
+    max-height: 388px;
+    padding: 16px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    background-color: fn.get-color('darck-tertiary');
+
+    @include mx.mq('lg'){
+        min-height: 400px;
+        padding: 24px;
+        margin-bottom: 32px;
+        background-color: fn.get-color('darck-secondary');
+    }
+}
+.co-workers-title {
+    @extend %details;
+    margin-bottom: 28px;
+
+    @include mx.mq('lg'){
+        margin-bottom: 36px;
+    }
+
+    span{
+        @extend %accent-text;
+        color: fn.get-color('light')
+    }
+}
+.co-workers-container {
+    @include mx.scroll-bar;
+
+    max-height: 296px;
+    overflow-y: auto;
+    margin-right: -16px;
+    @include mx.mq('lg'){
+        margin-right: -24px;
+    }
+}
+.co-workers-board {
+    margin-bottom: 20px;
+}
+
+
+

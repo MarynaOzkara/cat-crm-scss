@@ -91,34 +91,37 @@
 
     </aside>
     <header class="header">
-      <button class="menu-btn btn js-menu-open" type="button" aria-expanded="false" aria-controls="sidebar-menu" data-menu-open>
+      <button class="menu-btn js-menu-open" type="button" aria-expanded="false" aria-controls="sidebar-menu" data-menu-open>
         <svg class="menu-btn-icon" width="24" height="24">
           <use href="./src/img/icons/icons.svg#icon-burger-menu"></use>
         </svg>
         Overview</button>
-        <label class="search-field">
-          <svg class="search-icon" width="20" height="20">
-            <use href="./src/img/icons/icons.svg#icon-search"></use>
-          </svg>
-          <input class="search-input" type="search" name="user search" placeholder="Search sonething..."/>
-        </label>
-        <a class="bell-link" href="#message">
-          <svg class="bell-icon" width="20" height="20">
-            <use href="./src/img/icons/icons.svg#icon-bell"></use>
-          </svg>
-        </a>
+        
+          <label class="search-field">
+            <svg class="search-icon" width="20" height="20">
+              <use href="./src/img/icons/icons.svg#icon-search"></use>
+            </svg>
+            <input class="search-input" type="search" name="user search" placeholder="Search sonething..."/>
+          </label>
+          <button class="notification-btn" type="button" data-notify="true" aria-label="Bell button">
+            <svg class="notification-btn-icon" width="20" height="20">
+              <use href="./src/img/icons/icons.svg#icon-bell"></use>
+            </svg>
+          </button>
+       
     </header>
     <main class="main">
       <section class="welcome">
         <div class="welcome-wrapper">
           <h1 class="welcome-title">Hi Yaroslav,</h1>
-          <p class="welcome-description">Welcome into Cat CRM Dashboard</p>
-          <button class="welcome-btn btn btn--primary" type="button">
-            <svg class="btn-icon" width="16" height="16">
-              <use href="./src/img/icons/icons.svg#icon-plus"></use>
-            </svg>
-            <span class="btn-inner">Primary normal</span></button>
+          <p class="welcome-description">Welcome into Cat CRM Dashboard</p> 
         </div>
+        <button class="welcome-btn btn btn--primary" type="button">
+          <svg class="btn-icon" width="16" height="16">
+            <use href="./src/img/icons/icons.svg#icon-plus"></use>
+          </svg>
+          <span class="btn-inner">Primary normal</span>
+        </button>
       </section>
       <section class="co-workers">
         <div class="co-workers-wrapper">
@@ -457,38 +460,43 @@
 
           </div>
 
-          <ul class="co-workers-board board">
-            <li class="board-item">
-              <div class="board-left">
-                <h3 class="board-caption">Send benefit review by Sunday</h3>
-                <p class="board-details">Due date:<time>December 23, 2023 </time></p>
-                <div class="thumb">
+          
+        </div>
+        <ul class="co-workers-board board">
+          <li class="board-item">
+            <div class="board-left">
+              <h3 class="board-caption">Send benefit review by Sunday</h3>
+              <p class="board-details">Due date:<time>December 23, 2023 </time></p>
+              <div class="person">
+                <div class="person-thumb">
                   <img src="./src/img/image 3.jpg" alt=""/>
                 </div>
-                <p class="co-workers-caption">George Fields</p>
-              </div>
-              <div class="board-badge">
-                <p class="badge-info">Reminder</p>
-                <div class="badge badge-completed">Completed</div>
-              </div>
-            </li>
-            <li class="board-item">
-              <div class="board-left">
-                <h3 class="board-caption">Send benefit review by Sunday</h3>
-                <p class="board-details">Due date:<time>December 23, 2023 </time></p>
-                <div class="thumb">
+                <p class="person-caption">George Fields</p>
+            </div>
+            </div>
+            <div class="board-badge">
+              <p class="badge-info">Reminder</p>
+              <div class="badge-warning">Completed</div>
+            </div>
+          </li>
+          <li class="board-item">
+            <div class="board-left">
+              <h3 class="board-caption">Send benefit review by Sunday</h3>
+              <p class="board-details">Due date:<time>December 23, 2023 </time></p>
+              <div class="person">
+                <div class="person-thumb">
                   <img src="./src/img/olga-zabegina-A3MleA0jtoE-unsplash 1.jpg" alt=""/>
                 </div>
-                <p class="co-workers-caption">Amanda Pitt</p>
-              </div>
-              <div class="board-badge">
-                <p class="badge-info">Call</p>
-                <div class="badge badge-ended">Ended</div>
-              </div>
-            </li>
-          </ul>
-          <button class="co-workers-btn btn btn--secondary"><span class="btn-inner">Show more</span></button>
-        </div>
+                <p class="person-caption">Amanda Pitt</p>
+            </div>
+            </div>
+            <div class="board-badge">
+              <p class="badge-info">Call</p>
+              <div class="badge-danger">Ended</div>
+            </div>
+          </li>
+        </ul>
+        <button class="co-workers-btn btn btn--secondary"><span class="btn-inner">Show more</span></button>
       </section>
       <section class="tasks">
         <h2 class="tasks-title"><span>Tasks (5)</span>|  Today</h2>

@@ -1,0 +1,64 @@
+@use '../../utilities/placeholders';
+@use '../../utilities/variables' as var;
+@use '../../utilities/functions' as fn;
+@use '../../utilities/mixins' as mx;
+
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.board-item {
+    @extend %section-frame;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    gap: 43px;
+    background-color: fn.get-color('darck-tertiary');
+
+    @include mx.mq('lg'){
+        background-color: fn.get-color('darck-secondary');
+    }
+}
+.board-left {
+}
+.board-caption {
+    @extend %accent-text;
+    margin-bottom: 8px;
+    color: fn.get-color('light-primary');
+}
+.board-details {
+    @extend %details;
+    margin-bottom: 20px;
+    color: fn.get-color('light-secondary');
+}
+.person{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+.person-thumb{
+    @include mx.frame(24px, $is-circle: true);
+}
+.person-caption{
+    @extend %details;
+}
+.board-badge {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.badge-info {
+    @extend %details;
+    margin-bottom: auto;
+    text-align: right;
+    color: fn.get-color('light-secondary');
+}
+.badge {
+}
+.badge-completed {
+}
+.badge-ended {
+}

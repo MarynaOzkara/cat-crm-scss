@@ -4,6 +4,7 @@
 @use '../utilities/mixins' as mx;
 
 .sidebar{
+  
   @include mx.mq('lg', 'max'){
     position: fixed;
     top: 0;
@@ -25,6 +26,7 @@
 
     @include mx.mq('lg'){
         grid-area: sidebar;
+       
     }
 
 }
